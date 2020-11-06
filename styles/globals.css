@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@500&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  background-color: #ffcc00;
 }
 
 a {
@@ -13,4 +17,46 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.baskerville {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.deeppink {
+  color: deeppink
+}
+
+.worksans {
+  font-family: 'Work Sans', sans-serif;
+}
+
+article p {
+  margin: 1rem 0px;
+}
+
+article ul li {
+  list-style-type: disc;
+  list-style-position: inside
+}
+
+article a {
+  text-decoration: underline;
+  text-decoration-color: deeppink;
+}
+
+button {
+  background: white;
+  border: 2px solid black;
+  box-shadow: 3px 3px black;
+}
+
+button:hover {
+  background: deeppink;
+  color: white;
+  cursor: pointer;
+}
+
+button.active {
+  background: deeppink;
 }
