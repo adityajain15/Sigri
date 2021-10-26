@@ -15,12 +15,13 @@
 .overlay {
   opacity: 0%;
 }
-
-.overlay:hover {
-  opacity: 100%;
-  background-color: rgba(32, 30, 30, 0.5);
-  color: white;
-  transition: background-color 0.4s;
+@media (pointer: fine) {
+  .overlay:hover {
+    opacity: 100%;
+    background-color: rgba(32, 30, 30, 0.5);
+    color: white;
+    transition: background-color 0.4s;
+  }
 }
 
 .overlaytext {

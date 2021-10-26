@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-//import Image from 'next/image'
 import { getAbout } from "../lib/content";
 
 const About = ({ content }) => {
@@ -11,7 +10,6 @@ const About = ({ content }) => {
         <title>Sigri - About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/*<Image src="/Me.jpg" alt="A picture of me and my doghter" height="400" width="300" quality="25" />*/}
       <article
         className="baskerville lh-copy f4"
         dangerouslySetInnerHTML={{ __html: contentHtml }}

@@ -7,8 +7,8 @@ social:
   ]
 ---
 
-Hello! My name is Aditya Jain. I am a frontend engineer with a deep background in data visualization. I am a graduate student at New York University's [ITP Program](https://itp.nyu.edu/) and also work as an engineer at [The Washington Post](https://www.washingtonpost.com/)'s news engineering team.
+Hello! My name is Aditya Jain. I am an engineer/designer with a background in data visualization. I currently work as a Software Engineer at [The Washington Post](https://www.washingtonpost.com/)'s News Engineering team.
 
-I graduated from the [University of Illinois at Chicago](https://www.uic.edu/) in 2015, with a Bsc. in Computer Science. (and also studied Art, Design and other mischief)
+I am a recent graduate from New York University's [ITP Program](https://itp.nyu.edu/)
 
 In the past I have had the privilege of working with the wonderful people at [Fast Forward Labs](https://www.cloudera.com/products/fast-forward-labs-research.html), [The Library of Congress](https://labs.loc.gov/), [CQ Rollcall](https://cqrollcall.com/) and [The Wire](http://thewire.in/).

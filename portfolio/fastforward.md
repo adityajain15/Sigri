@@ -3,8 +3,9 @@ image: "/fastforward.png"
 link: https://fastforwardlabs.github.io/cinephile_tsne/
 title: "Visualizing the Taste of a Community of Cinephiles Using t-SNE"
 feature: false
-date: '2017-05-01'
+date: "2017-05-01"
 ---
+
 Hello! My name is Aditya Jain. I am a frontend engineer with a deep background in data visualization. I am also a current graduate student at the New York Univerity's [ITP Program](https://itp.nyu.edu/) and engineer for the [Washington Post](https://www.washingtonpost.com/)'s news engineering team.
 
 I graduated from the [University of Illinois at Chicago](https://www.uic.edu/) in 2015, with a Bsc. in Computer Science. (and also studied Art, Design and other mischief)

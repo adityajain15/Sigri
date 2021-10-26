@@ -5,7 +5,7 @@ const NavigationBar = ({ className }) => {
   const links = [
     { route: "/", text: "Home" },
     { route: "/blog", text: "Blog" },
-    { route: "/about", text: "About" }
+    { route: "/about", text: "About" },
   ];
   return (
     <nav className={className}>

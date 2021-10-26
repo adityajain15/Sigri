@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@500&display=swap");
 
 html,
 body {
@@ -20,29 +20,60 @@ a {
 }
 
 .baskerville {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
 }
 
 .deeppink {
-  color: deeppink
+  color: deeppink;
 }
 
 .worksans {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 article p {
-  margin: 1rem 0px;
+  margin: 0.5rem 0px;
+}
+
+article em {
+  font-style: italic;
 }
 
 article ul li {
   list-style-type: disc;
-  list-style-position: inside
+  list-style-position: inside;
+}
+
+article img {
+  display: block;
+  max-height: 300px;
+  margin: auto;
 }
 
 article a {
   text-decoration: underline;
   text-decoration-color: deeppink;
+}
+
+article h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+}
+
+article h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem 0px;
+}
+
+article h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+}
+
+article iframe {
+  margin: auto;
+  display: block;
 }
 
 button {
@@ -51,10 +82,12 @@ button {
   box-shadow: 3px 3px black;
 }
 
-button:hover {
-  background: deeppink;
-  color: white;
-  cursor: pointer;
+@media (pointer: fine) {
+  button:hover {
+    background: deeppink;
+    color: white;
+    cursor: pointer;
+  }
 }
 
 button.active {
