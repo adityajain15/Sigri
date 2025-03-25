@@ -1,0 +1,14 @@
+---
+title: "The Profit Sonifier"
+date: "2020-11-10"
+tags: ["Hello Computer", "ITP"]
+summary: "An entirely silly use of the SpeechSynthesis API"
+---
+
+![Profit Sonifier](/profitsonify.png)
+
+This week's assignment was to create something that takes non-speech input from a person and responds with speech synthesis. I created [The Profit Sonifier](https://likeable-jelly-calculator.glitch.me/), a tool to sonify numbers between a certain range.
+
+I was inspired by a short snippet in the novel _Dirk Gently's Holistic Detective Agency_ that was published in 1987 and written by Douglas Adams. The novel describes a software engineer who wrote a spreadsheet program to sonify (as the practice is now known) company accounts, rendering profits and losses as a piece of music. The snippet always made me chuckle and for this short assignment I decided to create a short sketch that would mimic the fictional software's behavior.
+
+The program expects the user to enter their presumed profits/losses as a series of comma seperated numbers, as well as a word to sonify the numbers with. Using d3's scale API to construct a mapping between the domain of the supplied numbers and the range of pitch values, the program “utters” each number as the scale dictates, giving the corporate executives a sonified summary of their profits/losses.

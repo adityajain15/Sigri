@@ -1,0 +1,18 @@
+---
+title: "Using DialogFlow to make a JokeBot"
+date: "2020-11-24"
+tags: ["Hello Computer", "ITP"]
+summary: "A JokeBot powered by Google's Firebase and DialogFlow API"
+---
+
+![JokeBot](/hcjokebot1.png)
+
+This week's assignment was to create something with Dialogflow, including fulfillment and logic. This a secondary task within the assignment was to use Firebase’s cloud functions to handle fulfilment. I created JokeBot, a simple DialogFlow app that can also uses Google’s Voice assistant.
+
+The first step in creating the app involved training DialogFlow to recognize when the user intended to hear a joke. This is the entry intent into the app, and when DialogFlow detects this particular intent it passes the context down (up?) to a Node based Firebase function. Dialogflow also detects any parameters that it detects within the user's query. These parameters are trained as 'entities' within the DialogFlow UI. There are two parameters for this intent — whether or not the joke is SFW and whether the joke is short or long.
+
+![Training parameters](/hcjokebot2.png)
+
+The Firebase function makes a request to the Jokes subreddit and fetches the top jokes, responding to a random joke within the list using the Actions-On-Google module. Some SSML tags are included in the response to add a pause between the joke and the punchline.
+
+![Silly Joke](/hcjokebot3.png)

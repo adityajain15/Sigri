@@ -1,0 +1,66 @@
+---
+title: "Intro to DialogFlow"
+date: "2020-11-18"
+tags: ["Hello Computer", "ITP"]
+summary: "Learning how to designing Voice Bots and a soft introduction to DialogFlow by Google"
+---
+
+![Arguebot](/hcarguebot1.png)
+
+This week's assignment was to create something weird with Dialogflow and fill out an accompanying voice bot design worksheet. I used the in-built DialogFlow interface to create a simple and silly Argument Bot.
+
+The bot is inspired by [Monty Python’s absurd Argument Clinic sketch](https://www.youtube.com/watch?v=DkQhK8O9Jik&ab_channel=MontyPython) in which a man tries to purchase an argument but is frustrated by the other person’s responses. I love the dynamic between the two people and thought that this dynamic would be well suited to subvert the traditional notion of a subservient voice assistant.
+
+Working with DialogFlow’s interface to create a substantive conversation was hard because I needed to hard code each intent, response or follow up. If there was a better way to do it, I was unable to use it this time around, however, I think the default fallbacks sort of work to undermine the conversation and achieve the intended goal of a frustrating conversation.
+
+## Context
+
+- _In what context is the person engaging with this bot?_
+- _What’s the relationship dynamic between the person and the bot?_
+
+This is an absurd situation where the person is trying to purchase an argument with the bot. The bot is designed to frustrate and subvert the traditional notion of a subservient bot, using its mandate to be argumentative towards this end.
+
+## Personality
+
+- _Who is the “character” speaking?_
+- _What are its motivations?_
+- _What is the power dynamic between person and bot?_
+
+The bot is a person who offers the service of arguing. Its intention, unknown to the human, is to argue in bad faith. The power dynamic between the human and the bot becomes apparent as the conversation goes along, revealing that the bot has greater power over the human.
+
+## Intents
+
+- _What general “intents” do we need to detect?_
+- _What are its motivations?_
+
+We need to detect an entry into the intent to argue. Once the bot knows that the person wants to have an argument, it is designed to stall the argument through fallbacks.
+
+## Intents
+
+- _What should the bot say when it doesn’t understand?_
+
+The bot repeats what the human would like to argue about
+
+## Sample Dialog
+
+- _What are the back and forths for each turn of conversation?_
+
+“I’m here for an argument”
+
+“You’ve come to the right place. What would you like to argue about?”
+
+“I want to argue about politics”
+
+“No, you wouldn‘t”
+
+“Yes, I would”
+
+“Can you say that again?”
+
+“This is ridiculous”
+
+“Please take a seat. What would you like to argue about?”
+
+“I hate this”
+
+“You’ve come to the right place. What would you like to argue about?”

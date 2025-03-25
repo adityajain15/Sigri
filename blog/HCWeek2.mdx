@@ -1,0 +1,16 @@
+---
+title: "Maze Runner"
+date: "2020-11-17"
+tags: ["Live Web", "Hello Computer", "ITP"]
+summary: "A frustrating multiplayer maze solving game"
+---
+
+![Maze Runner](/mazeblog.png)
+
+This week's assignment was to create something that takes voice input from a person and responds without text. I created [Maze Runner](http://maze.sigri.me/), a multiplayer game involving generated mazes.
+
+The game dynamically constructs a maze using the recursive-backtracking algorithm and communicates the resulting maze over a WebSocket which is rendered on the client side using the Canvas API. The first person to join the game is also assigned the role of a host, and they are given the power to restart the game which regenerates a random maze. The host can also choose the game control mode which is either via arrow keys or voice. The goal of the game is to be the first person to solve the maze and, if the game control is via voice, each player in the game can give voice commands such as "Go up" or "Down" to move their marker.
+
+The naive voice input (achieved using parsed direction keywords from the recognized speech) is intentionally painstaking, and often leads to hilarious situations with multiple people yelling at their machines. To mitigate the frustration I also added the arrow key mode which is much faster and more suitable for mazes of a bigger size.
+
+Presently the mazes generated are not very difficult to solve since the recursive backtracking algorithm produces trees with a small branching factor (in other words, the mazes generated don't have a lot of dead-ends). A good future improvement could be to use [Wilson's algorithm](https://en.wikipedia.org/wiki/Loop-erased_random_walk) to create a maze that produces mazes that could be a bit more challenging.

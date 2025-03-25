@@ -1,0 +1,37 @@
+---
+title: "Name the Countries!"
+date: "2020-12-12"
+tags: ["Hello Computer", "ITP"]
+summary: "A WebSocket/Voice based game to level up your geographical knowledge"
+---
+
+![Name the Country](/namecountry.png)
+
+This week's assignment was to use human voice, synthesized speech, or both, to create something that subverts the conventional uses of voice technology.
+
+## Inspiration
+
+I’ve been all about WebSocket based games lately and I’m fascinated by using voice as an input to these games. For my research I looked at the history of [Parlour games](https://en.wikipedia.org/wiki/Parlour_game) and was fascinated by the social dynamics of these games (I also briefly went down a rabbit hole of wikipedia entries about the layout of Victorian homes, but I digress). Having studied some examples, I decided that I wanted to build a game that would involve two teams of equal strength, and that both teams would compete against each other for a certain goal.
+
+The goal I picked was naming countries, a fairly simple one that needed little explanation and would readily encourage participation. The game also has a tongue-in-cheek element that almost always reveals itself towards the end of the game — namely the inability of a majority of people to name countries within the African Continent.
+
+## Building the App
+
+I used d3’s geo module to create a map on the frontend that would display the countries that have been identified in the game. It also acts a visual clue for countries that are yet to be named. Countries that have been identified are also listed below the name of the team that has identified them. The mode of input for this game is voice, which is powered by the browser’s inbuilt SpeechRecognition API. The voice recognition is continous thus encouraging players to speak as fast as they can be understood, while also fueling the sense of a “race” to name all countries before the other team.
+
+## Future improvements
+
+- Adding more elements to this game that emphasize its social nature
+- Experimenting with WebRTC so that players from the same team can hear each other speak
+- It would be interesting to see how the game progresses if players cannot see the countries that are yet to be identified. Would that make naming countries harder?
+
+## Video documentation
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/4UxwmR0XjLc"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
